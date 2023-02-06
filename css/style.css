@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+  height: 100%;
+  background-color: #cfd6bf;
+  /* background-image: linear-gradient(to bottom right, rgb(214, 105, 105), rgb(134, 64, 191));
+	background-image: -moz-linear-gradient(to bottom right, rgb(214, 105, 105), rgb(134, 64, 191));
+	background-image: -webkit-linear-gradient(to bottom right, rgb(214, 105, 105), rgb(134, 64, 191)); */
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.2);
+  margin-top: 1rem;
+  padding: 0.3rem 1rem;
+  border-radius: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-mobile-menu {
+  width: 2.5rem;
+  height: 2.5rem;
+  filter: invert(100%);
+  display: none;
+  border-radius: 1rem;
+}
+
+.navbar-mobile-menu:active {
+  background-color: rgba(0, 0, 0, 0.171);
+}
+
+.nav-con {
+  display: inline-block;
+}
+
+.nav-con-mobile {
+  display: none;
+  position: absolute;
+  top: 5rem;
+  right: -20rem;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 0 8px 8px #0000001e;
+  transition: right 1s ease;
+}
+
+.nav-con-mobile.active {
+  display: block;
+}
+
+.nav-con-mobile.animationcom {
+  right: 0rem;
+}
+
+.nav-con-mobile.animationgo {
+  right: -20rem;
+}
+
+.navbar-nav-mobile {
+  list-style-type: none;
+  display: block;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.navbar-nav-mobile > li {
+  display: block;
+  margin: 1rem;
+}
+
+.navbar-nav-mobile > li > a:hover {
+  background-color: rgba(0, 0, 0, 0.075);
+}
+
+.navbar-nav-mobile > li > a {
+  color: black;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 2rem;
+  text-align: center;
+}
+
+.navbar-nav-mobile > li > a.active {
+  color: white;
+  background-color: #6b7555;
+}
+
+.shop-title {
+  color: white;
+}
+
+.navbar-nav {
+  list-style-type: none;
+  display: inline;
+}
+
+.navbar-nav > li {
+  display: inline;
+}
+
+.navbar-nav > li > a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: 0.3s ease-in;
+  margin: 1rem 0.5rem;
+}
+
+.navbar-nav > li > a:hover {
+  background-color: #cfd6bf;
+  color: black;
+}
+
+.navbar-nav > li > a.active {
+  background-color: #6b7555;
+  color: white !important;
+}
+
+.price-con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.p-price {
+  margin-right: 1rem;
+}
+
+.icon-cart {
+  width: 55px;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+.badge-icon {
+  position: relative;
+  top: -1.2rem;
+  right: 1rem;
+  background-color: rgb(202, 79, 13) !important;
+  padding: 0.1rem 0.5rem;
+  border-radius: 100%;
+  margin-right: -0.9rem;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.2);
+  margin-top: 2rem;
+  padding: 0.3rem 1rem;
+  border-radius: 1rem;
+  position: relative;
+  text-align: center;
+}
+
+.footer-p {
+  margin: 0.5rem 0;
+}
+
+@media screen and (max-width: 992px) {
+  .navbar-mobile-menu {
+    display: inline-block;
+  }
+
+  .nav-con {
+    display: none;
+  }
+}

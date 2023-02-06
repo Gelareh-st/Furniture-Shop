@@ -1,0 +1,185 @@
+.land-sec{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 0;
+	padding: 8rem 4rem 4rem 4rem;
+	background-color: #6b7555;
+}
+
+.land-p{
+	color: white;
+	margin: 1.5rem 0;
+	text-align: justify;
+	width: 30rem;
+}
+
+.land-h1{
+	color: white;
+}
+
+.btn-buy-now{
+	border: none;
+	background-color: #393f2b;
+	color: white;
+	padding: 0.5rem 1.5rem;
+	margin-right: 1rem;
+	border-radius: 5rem;
+}
+
+.btn-explore{
+	border: 2px solid white;
+	border-radius: 5rem;
+	padding: 0.5rem 1.5rem;
+	background-color: transparent;
+	color: white;
+}
+
+.img-sofa{
+	position: relative;
+	width: 32rem;
+	top: 15rem;
+}
+
+.grid-sec{
+	margin-top: 34rem;
+}
+
+.info-sec{
+	padding: 2rem 2rem 2rem 4rem;
+	margin-bottom: 3rem;
+}
+
+.des-info-sec{
+	margin: 2.5rem 0;
+}
+
+.btn-info-sec{
+	border-radius: 50%;
+	background-color: #f5f7ef;
+	border: none;
+	padding: 0.3rem 0.5rem;
+}
+
+.item-sec{
+	padding-left: 2rem;
+	padding-right: 2rem;
+	padding-bottom: 2rem;
+}
+
+.card-item{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	border-radius: 1rem;
+	transition: 
+	background-color 0.2s ease-in,
+	box-shadow 0.2s ease-in;
+	margin-top: 1rem;
+}
+
+.card-item:hover{
+	background-color: #b9c69dba;
+	box-shadow: 0 4px 8px #0000007d;
+}
+
+/* .card-item:hover .card-item-title{
+	color: white;
+}
+
+.card-item:hover .card-item-price{
+	color: white;
+} */
+
+.card-item-image{
+	width: 16rem;
+	height: 16rem;
+	object-fit: contain;
+	margin-top: 2rem;
+}
+
+.card-item-title{
+	margin-top: 2.5rem;
+	margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 992px) {
+	
+	.img-sofa{
+		position: relative;
+		width: 32rem;
+		top: 10rem;
+		margin-top: -7rem;
+	}	
+
+	.sofa-sec{
+		display: flex;
+		justify-content: center;
+	}
+
+	.grid-sec{
+		margin-top:42rem;
+	}
+
+}
+
+@media screen and (max-width: 536px) {
+	
+	.img-sofa{
+		position: relative;
+		width: 24rem;
+		top: 9rem;
+		margin-top: -7rem;
+	}	
+
+	.sofa-sec{
+		display: flex;
+		justify-content: center;
+		margin-top: 2rem;
+	}
+
+	.grid-sec{
+		margin-top: 40rem;
+	}
+
+	.land-p{
+		width: auto;
+	}
+
+}
+
+@media screen and (max-width: 390px) {
+	
+	.img-sofa{
+		position: relative;
+		width: 18rem;
+		top: 7rem;
+		margin-top: -7rem;
+	}	
+
+	.sofa-sec{
+		display: flex;
+		justify-content: center;
+		margin-top: 3rem;
+	}
+
+	.grid-sec{
+		margin-top: 40rem;
+	}
+
+	.btn-explore{
+		padding: 0.3rem 1.5rem;
+		font-size: 0.9rem;
+		white-space: nowrap;
+	}
+
+	.btn-buy-now{
+		padding: 0.3rem 1.5rem;
+		font-size: 0.9rem;
+		white-space: nowrap;
+	}
+
+}
